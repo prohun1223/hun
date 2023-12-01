@@ -1,0 +1,54 @@
+h1 {
+  font-size: 3.5rem;
+  color: transparent;
+
+  background-image: linear-gradient(to right, rgb(2, 0, 109), rgb(8, 61, 8));
+  -webkit-background-clip: text;
+  /* width: 350px; */
+  font-weight: bolder;
+  animation: animating 2s alternate infinite;
+  animation: position 10s infinite;
+}
+@keyframes animating {
+  0% {
+    color: black;
+  }
+  10% {
+    color: green;
+  }
+  20% {
+    color: blue;
+  }
+  30% {
+    color: yellow;
+  }
+  40% {
+    color: orange;
+  }
+  50% {
+    color: gray;
+  }
+  60% {
+    color: pink;
+  }
+  70% {
+    color: rgb(82, 1, 15);
+  }
+  80% {
+    color: rgb(19, 178, 38);
+  }
+  90% {
+    color: rgb(178, 19, 125);
+  }
+  100% {
+    color: rgb(178, 19, 75);
+  }
+}
+@keyframes position {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
